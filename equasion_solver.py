@@ -28,7 +28,7 @@ elif deg == 2:
             d = sqrt(-delta)
             real_part = -b / (2*a)
             imaginary_part = d / (2*a)
-            print(f"The equation has two complex roots: {real_part} + {imaginary_part}i and {real_part} - {imaginary_part}i")
+            print(f"The equation has two complex roots: {real_part} + {imaginary_part} i and {real_part} - {imaginary_part} i")
         elif delta == 0:
             root = -b / (2*a)
             print(f"The equation has one real root: {root}")

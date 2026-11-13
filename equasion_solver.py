@@ -2,8 +2,18 @@
 
 from math import sqrt
 
-print("This program solves polynomial equations of degree 1 and 2.")
-deg = int(input("Enter the degree of the polynomial: "))
+print("-"*20, "\nThis program solves polynomial equations of degree 1 and 2.")
+
+while True:
+    deg = input("Enter the degree of the polynomial: ")
+    if deg=='q':
+        break
+    try:
+        deg = int(deg)
+        break
+    except:
+        print("error, this can't be a degree of a polinomial (type 'q' to quit)")
+
 
 if deg == 1:
     print('Enter the coefficients of the polynomial in the form ax + b = 0')
@@ -36,4 +46,6 @@ elif deg == 2:
             root1 = (-b + delta**0.5) / (2*a)
             root2 = (-b - delta**0.5) / (2*a)
             print(f"The equation has two real roots: {root1} and {root2}")
+else:
+    print(" can't handle this type of polinomials")
 
